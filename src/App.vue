@@ -195,7 +195,7 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
                   Resumen del carrito
                 </div>
 
-                <q-badge color="positive" :label="`${totalItems} items`"  />
+               
               </q-card-section>
 
 
@@ -229,6 +229,11 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
                 <q-separator  class="q-my-sm"/>
 
                 <div class="resumen-calculos">
+
+                  <div class="fila-calculo">
+                    <span class="text-body2 text-dark">total items:</span>
+                    <q-badge color="positive" :label="`${totalItems} items`"  />
+                  </div>
                   <div class="fila-calculo">
                     <span class="text-body2 text-dark">Subtotal:</span>
                     <span class="text-body1 text-weight-bold text-dark">${{ subtotal.toFixed(2) }}</span>
@@ -236,8 +241,8 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
 
 
                   <div class="fila-calculo">
-                    <span class="text-caption text-grey-8">Impuesto (16%):</span>
-                    <span class="text-body2 text-grey-8">${{ impuesto.toFixed(2) }}</span>
+                    <span class="text-caption text-grey-10">Impuesto (16%):</span>
+                    <span class="text-body2 text-grey-10">${{ impuesto.toFixed(2) }}</span>
                   </div>
 
 
@@ -283,14 +288,6 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
   gap: 10px;
   max-width: 400px;
 }
-.banner-fixed {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.banner-guardado {
-  animation: slideIn 0.3s ease-out;
-}
-
 
 
 .main-layout {
@@ -368,7 +365,7 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
 
 .producto-nombre {
   color: #1a202c ;
-  font-size: 1rem ;
+  font-size: 0.8rem ;
   line-height: 1.4;
 }
 
@@ -424,7 +421,7 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
 .item-nombre {
   grid-column: 1 / -1;
   font-weight: 600;
-  color: #1a202c;
+  color: #212c1a;
   line-height: 1.3;
 }
 
