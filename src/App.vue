@@ -99,7 +99,7 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
 
     <div class="main-layout">
 
-      <!-- secccion de los productos  -->
+    
       <div class="seccion-productos">
 
         <q-card flat bordered>
@@ -137,7 +137,7 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
             </div>
 
 
-            <!-- INFORMACIÓN DEL PRODUCTO -->
+           
 
           <div class="producto-col info-col">
             <div class="text-body1 text-weight-bold q-mb-xs producto-nombre">
@@ -155,7 +155,7 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
            </div>
 
 
-           <!-- CONTROLES DE CANTIDAD -->
+         
 
            <div class="producto-col acciones-col">
             <div v-if="obtenerCantidad(producto.id) >0 " class="controles-cantidad">
@@ -184,7 +184,7 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
 
 
 
-              <!-- RESUMEN DEL CARRITO ) -->
+             
 
               <div class="resumen-carrito">
 
@@ -274,7 +274,7 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
   position: relative;
 }
 
-/* NOTIFICACIONES FIJAS */
+
 .notificaciones-container {
   position: fixed;
   top: 20px;
@@ -294,7 +294,7 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
   animation: slideIn 0.3s ease-out;
 }
 
-/* ANIMACIONES */
+
 @keyframes slideIn {
   from {
     transform: translateX(100%);
@@ -331,7 +331,7 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
   opacity: 0;
 }
 
-/* LAYOUT PRINCIPAL */
+
 .main-layout {
   display: grid;
   grid-template-columns: 1fr 350px;
@@ -340,7 +340,7 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
   margin-top: 20px;
 }
 
-/* SECCIÓN DE PRODUCTOS */
+
 .seccion-productos {
   width: 100%;
 }
@@ -349,7 +349,7 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
   padding: 12px 16px;
 }
 
-/* TABLA DE PRODUCTOS */
+
 .productos-tabla {
   display: flex;
   flex-direction: column;
@@ -373,7 +373,7 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
   border-bottom: none;
 }
 
-/* COLUMNAS DE LA TABLA */
+
 .producto-col {
   display: flex;
   align-items: center;
@@ -397,21 +397,21 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
   justify-content: flex-end;
 }
 
-/* IMAGEN DEL PRODUCTO */
+
 .producto-imagen {
   width: 70px;
   height: 70px;
   border-radius: 8px;
 }
 
-/* NOMBRE DEL PRODUCTO - MEJORA DE VISIBILIDAD */
+
 .producto-nombre {
   color: #1a202c ;
   font-size: 1rem ;
   line-height: 1.4;
 }
 
-/* CONTROLES DE CANTIDAD */
+
 .controles-cantidad {
   display: flex;
   align-items: center;
@@ -423,7 +423,7 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
   justify-content: center;
 }
 
-/* RESUMEN DEL CARRITO */
+
 .resumen-carrito {
   position: relative;
 }
@@ -437,13 +437,13 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
   padding: 12px 16px;
 }
 
-/* SECCIÓN RESUMEN */
+
 .seccion-resumen {
   background-color: #ffffff;
   padding: 12px 16px;
 }
 
-/* ITEMS DEL CARRITO */
+
 .carrito-items {
   max-height: 220px;
   overflow-y: auto;
@@ -478,7 +478,7 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
   color: #1a202c;
 }
 
-/* CÁLCULOS DEL RESUMEN */
+
 .resumen-calculos {
   display: flex;
   flex-direction: column;
@@ -499,7 +499,7 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
   margin-top: 6px;
 }
 
-/* SCROLLBAR PERSONALIZADO */
+
 .carrito-items::-webkit-scrollbar {
   width: 5px;
 }
@@ -518,7 +518,7 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
   background: #555;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 1200px) {
   .main-layout {
     grid-template-columns: 1fr;
@@ -562,6 +562,42 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
     right: 50px;
     left: 50px;
     max-width: none;
+  }
+}
+
+.productos-tabla-container {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+
+.productos-tabla-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.productos-tabla-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.productos-tabla-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.productos-tabla-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media (max-width: 768px) {
+  .productos-tabla-container {
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+  
+  
+  .productos-tabla-container::-webkit-scrollbar {
+    width: 6px;
   }
 }
 </style>
