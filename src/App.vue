@@ -261,11 +261,6 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
 </template>
 
 
-
-
-
-
-
 <style scoped>
 .app-container {
   max-width: 1400px;
@@ -275,17 +270,19 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
 }
 
 
+
+
+
 .notificaciones-container {
   position: fixed;
   top: 20px;
   right: 20px;
-  z-index: 9999;
+  z-index: 100;  
   display: flex;
   flex-direction: column;
   gap: 10px;
   max-width: 400px;
 }
-
 .banner-fixed {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
@@ -294,42 +291,6 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
   animation: slideIn 0.3s ease-out;
 }
 
-
-@keyframes slideIn {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-.slide-down-enter-active,
-.slide-down-leave-active {
-  transition: all 0.3s ease;
-}
-
-.slide-down-enter-from {
-  transform: translateY(-100%);
-  opacity: 0;
-}
-
-.slide-down-leave-to {
-  transform: translateY(-100%);
-  opacity: 0;
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.3s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
 
 
 .main-layout {
@@ -455,7 +416,7 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
   grid-template-columns: 1fr auto;
   gap: 6px;
   padding: 8px;
-  background-color: #f0f4f8;
+  background-color: #0067cd70;
   border-radius: 6px;
   border: 1px solid #e0e6ed;
 }
