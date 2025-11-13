@@ -359,7 +359,9 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
 .producto-imagen {
   width: 70px;
   height: 70px;
-  border-radius: 8px;
+  border-radius:15px ;
+  border: 1px solid  #0067cd70;
+
 }
 
 
