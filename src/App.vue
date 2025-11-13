@@ -108,7 +108,7 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
 
             <div class="text-h6 q-mb-xs">
               <q-icon name="shopping_cart" size="sm" class="q-mr-sm" />
-              Productos Disponibles
+              Detalles del producto
             </div>
           </q-card-section>
 
@@ -249,7 +249,7 @@ const obtenerCantidad = (id) => carrito.value.find(item => item.id === id)?.cant
                   <q-separator class="q-my-sm"/>
 
                   <div class="fila-calculo total-final">
-                    <span class="text-body1 text-weight-bold text-dark">TOTAL:</span>
+                    <span class="text-body1 text-weight-bold text-dark">TOTAL A PAGAR:</span>
                     <span class="text-h6 text-weight-bold text-primary"> {{ totalFinal.toFixed(2) }}</span>
                   </div>
                 </div>
