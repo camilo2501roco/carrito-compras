@@ -2,11 +2,11 @@
 import { computed, ref, watch } from 'vue';
 
 const productosDisponibles = ref([
-  { id: 1, nombre: 'studio scarlett 3rd gen', precio: 219, imagen: './src/assets/studio scarlett 3rd gen.png' },
-  { id: 2, nombre: 'KeyLab 88 mk3', precio: 1299, imagen: './src/assets/KeyLab 88 mk3.png' },
-  { id: 3, nombre: 'Neumann TLM 103', precio: 900, imagen: './src/assets/Micrófono de condensador Neumann TLM 103.png' },
-  { id: 4, nombre: 'guitarra yamaha C40', precio: 199, imagen: './src/assets/yamaha c40.png' },
-  { id: 5, nombre: 'Linsoul - KZ ZS10 Pro', precio: 59, imagen: './src/assets/Linsoul - KZ ZS10 Pro.png' }
+  { id: 1, nombre: 'studio scarlett 3rd gen', precio: 219, imagen: 'https://sinfoniamusical.com/cdn/shop/files/2I24GKIT.jpg?v=1708445642&width=1214' },
+  { id: 2, nombre: 'KeyLab 88 mk3', precio: 1299, imagen: 'https://medias.arturia.net/images/products/keylab-essential-88-mk3/keylab.png' },
+  { id: 3, nombre: 'Neumann TLM 103', precio: 900, imagen: 'https://musicalboutique.co/cdn/shop/products/neumann-tlm-103-nickel_5317_1_1.jpg?v=1590604313' },
+  { id: 4, nombre: 'guitarra yamaha C40', precio: 199, imagen: 'https://www.pianosbogota.com/wp-content/uploads/2021/02/GUITARRA-ELCTROACUSTICA-YAMAHA-C40.jpg' },
+  { id: 5, nombre: 'Linsoul - KZ ZS10 Pro', precio: 59, imagen: 'https://www.linsoul.com/cdn/shop/products/cd27f3077afd0b0ed82cc78fab831e51.jpg?v=1629801301&width=1946' }
 ]);
 
 const cargarCarrito = () => {
