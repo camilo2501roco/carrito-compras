@@ -2,11 +2,11 @@
 import { computed, ref, watch } from 'vue';
 
 const productosDisponibles = ref([
-  { id: 1, nombre: 'studio scarlett 3rd gen', precio: 219, imagen: '../src/studio scarlett 3rd gen.png' },
-  { id: 2, nombre: 'KeyLab 88 mk3', precio: 1299, imagen: '../src/KeyLab 88 mk3.png' },
-  { id: 3, nombre: 'Neumann TLM 103', precio: 900, imagen: '../src/Micrófono de condensador Neumann TLM 103.png' },
-  { id: 4, nombre: 'guitarra yamaha C40', precio: 199, imagen: '../src/yamaha c40.webp' },
-  { id: 5, nombre: 'Linsoul - KZ ZS10 Pro', precio: 59, imagen: '../src/Linsoul - KZ ZS10 Pro.webp' }
+  { id: 1, nombre: 'studio scarlett 3rd gen', precio: 219, imagen: './src/assets/studio scarlett 3rd gen.png' },
+  { id: 2, nombre: 'KeyLab 88 mk3', precio: 1299, imagen: './src/assets/KeyLab 88 mk3.png' },
+  { id: 3, nombre: 'Neumann TLM 103', precio: 900, imagen: './src/assets/Micrófono de condensador Neumann TLM 103.png' },
+  { id: 4, nombre: 'guitarra yamaha C40', precio: 199, imagen: './src/assets/yamaha c40.png' },
+  { id: 5, nombre: 'Linsoul - KZ ZS10 Pro', precio: 59, imagen: './src/assets/Linsoul - KZ ZS10 Pro.png' }
 ]);
 
 const cargarCarrito = () => {
